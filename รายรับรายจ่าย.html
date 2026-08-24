@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>บัญชีรายรับรายจ่าย</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-card"></div>
+    <h1>โปรแกรมบัญชีรายรับ - รายจ่าย</h1>
+    <hr>
+
+    <h2>เพิ่มรายการ</h2>
+    <div class="form-row">
+
+    <label>ประเภท : </label>
+    <select>
+        <option>รายรับ</option>
+        <option>รายจ่าย</option>
+    </select>
+
+    <label>ชื่อรายการ : </label>
+    <input type="text" placeholder="กรอกชื่อรายการ">
+
+    <label>หมวดหมู่ : </label>
+    <select>
+        <option> อาหาร</option>
+        <option> เดินทาง</option>
+        <option> ช้อปปิ้ง</option>
+        <option> เงินเดือน</option>
+        <option> อื่นๆ</option>
+    </select>
+
+    <label>จำนวนเงิน : </label>
+    <input type="number" placeholder="กรอกจำนวนเงิน">
+
+    <button>เพิ่มรายการ</button>
+    </div>
+
+    <h2>ค้นหารายการ</h2>
+    <input
+        type="search"
+        placeholder=" ค้นหาชื่อรายการ"
+    >
+    <hr>
+    
+    <h2>ประวัติรายการทั้งหมด</h2>
+
+    <table border="1" cellpadding="2">
+
+        <tr>
+            <th>ID</th>
+            <th>ประเภท</th>
+            <th>ชื่อรายการ</th>
+            <th>หมวดหมู่</th>
+            <th>จำนวนเงิน</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>รายจ่าย</td>
+            <td>ข้าวกลางวัน</td>
+            <td>อาหาร</td>
+            <td>฿50</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>รายรับ</td>
+            <td>เงินเดือน</td>
+            <td>เงินเดือน</td>
+            <td>฿15,000</td>
+        </tr>
+
+    </table>
+    <br>
+    <hr>
+
+    <h2>สรุปรายงานการเงิน</h2>
+    <p>ยอดรายรับรวม : <strong>฿15,000.0</strong></p>
+    <p>ยอดรายจ่ายรวม : <strong>฿50.0</strong></p>
+    <p>ยอดเงินคงเหลือสุทธิ : <strong>฿14,950.0</strong></p>
+
+    <button>ล้างข้อมูลทั้งหมด</button>
+    </div>
+</body>
+</html>
